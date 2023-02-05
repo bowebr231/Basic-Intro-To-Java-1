@@ -98,7 +98,7 @@ class LessonsForJoshTest {
     @Test
     void sortBooksByTitle() {
         Book[] libraryCopy = library.clone();
-        Book[] actual = LessonsForJosh.sortBooksByDate(libraryCopy);
+        Book[] actual = LessonsForJosh.sortBooksByTitle(libraryCopy);
         Book[] expected = new Book[] {library[ANIMORPHS], library[FLIES], library[HARRY_POTTER], library[PROGRAMMER], library[STAR_WARS]};
         assertEquals(expected, actual);
     }
